@@ -1,0 +1,259 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: bisque;
+    font-family: Arial;
+    padding-bottom: 1000px;
+    margin-right: 0;
+}
+
+header {    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 197, 63);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px black inset;
+}
+
+.left-section {
+
+}
+
+.right-section {
+
+}
+
+.profile-log-sign-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.current-user-profile-picture {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.log-in-button {
+    background-color: white;
+    color: blue;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    border-color: blue;
+    border-width: 3px;
+    border-style: solid;
+    font-weight: bold;
+}
+
+.sign-up-button {
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    border: none;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    border-color: blue;
+    border-width: 3px;
+    border-style: solid;
+    margin-left: 10px;
+}
+
+.link-to-log, 
+.link-to-sign {
+    text-decoration: none;
+    height: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 87px;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgb(230, 61, 61);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px black inset;
+  }
+
+  .page {
+    color: white;
+    transition: all 0.15s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex: 1;
+    text-decoration: none;
+  }
+  
+  .page:hover {
+    background-color: rgba(255, 135, 14, 0.352);
+  }
+
+  main {
+    margin-top: 87px;
+    margin-left: 133px;
+    box-shadow: 0px 0px 10px black inset;
+  }
+
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .home-description {
+    text-align: center;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  .selections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(202, 24, 24, 0.201);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 10px black inset;
+  }
+
+  .selection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px black inset;
+  }
+
+  .first {
+    width: 20px;
+    height: 20px;
+  }
+
+  .second {
+    width: 30px;
+    height: 30px;
+  }
+
+  .third {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fourth {
+    width: 50px;
+    height: 50px;
+  }
+
+  .fifth {
+    width: 60px;
+    height: 60px;
+  }
+
+  .percentage-label {
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  #lowest {
+    accent-color: rgb(51, 152, 0);
+  }
+
+  #upper-lowest {
+    accent-color: rgb(40, 119, 0);
+  }
+
+  #middle {
+    accent-color: rgb(152, 96, 0);
+  }
+
+  #under-highest {
+    accent-color: rgb(152, 68, 0);
+  }
+
+  #highest {
+    accent-color: rgb(255, 0, 0);
+  }
+
+  .happy-selection,
+  .sad-selection,
+  .tired-selection,
+  .energetic-selection,
+  .stressed-selection,
+  .anger-selection {
+    background: rgb(241, 36, 97);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black inset;
+
+  }
+
+  .mood {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .mood-description {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .c-a-r-button {
+    padding: 20px 10px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: rgb(183, 24, 24);
+    box-shadow: 0px 0px 10px black inset;
+  }
+
+  .c-a-r-button:hover {
+    background-color: rgb(154, 24, 24);
+  }
+
+  .c-a-r-button:active {
+    opacity: 0.8;
+  }
