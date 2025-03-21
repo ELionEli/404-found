@@ -1,10 +1,10 @@
 function getSelectedValue(name) {
     const selected = document.querySelector(`input[name="${name}"]:checked`);
-    return selected ? selected.value : null;
+    return selected ? selected.value : "0";
 }
 
 function feelings() {
-    const moods = ["happy", "sad", "tired", "energy", "stress", "anger"]; 
+    const moods = ["happy", "sad", "tired", "energy", "stress", "anger"];
     const moodValues = {};
 
     moods.forEach(mood => {
@@ -15,7 +15,7 @@ function feelings() {
 
     if (allZero) {
         alert("Please enter your feelings.");
-    } else {
-        alert("Feelings have been entered:\n" + JSON.stringify(moodValues, null, 2));
+        return;
     }
+    
 }
