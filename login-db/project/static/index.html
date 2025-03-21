@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeActive</title>
+  <link rel="stylesheet" href="home-page.css" />
+  <link rel="icon" href="vibe-active-icon.png" type="image/x-icon">
+  <script src="home-page.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="left-section">
+      <img class="logo" src="vibe-active-icon.png" />
+    </div>
+    <div class="right-section">
+      <a class="link-to-log" href="">
+        <button class="log-in-button">Log in</button>
+      </a>
+      <a class="link-to-register" href="">
+        <button class="register-button">Register</button>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="title">Home</div>
+    <div class="home-description">
+      Here we can calculate some activity recommendations that you can do based on your current mood!
+    </div>
+    <div class="selections">
+        <div class="happy-selection">
+          <div class="mood-title">
+            <div class="mood">Happiness</div>
+            <div class="mood-description">Choose how happy you are feeling right now: </div>
+          </div>
+          <div class="selection">
+            <input id="happy-lowest" class="first" value="0" type="radio" name="happy">
+            <label class="percentage-label" for="happy-lowest">0%</label>
+            <input id="happy-upper-lowest" class="second" value="25" type="radio" name="happy">
+            <label class="percentage-label" for="happy-upper-lowest">25%</label>
+            <input id="happy-middle" class="third" value="50" type="radio" name="happy">
+            <label class="percentage-label" for="happy-middle">50%</label>
+            <input id="happy-under-highest" class="fourth" value="75" type="radio" name="happy">
+            <label class="percentage-label" for="happy-under-highest">75%</label>
+            <input id="happy-highest" class="fifth" value="100" type="radio" name="happy">
+            <label class="percentage-label" for="happy-highest">100%</label>
+          </div>
+        </div>
+
+      <div class="sad-selection">
+        <div class="mood-title">
+          <div class="mood">Sadness</div>
+          <div class="mood-description">Choose how sad you are feeling right now: </div>
+        </div>
+        <div class="selection">
+          <input id="sad-lowest" class="first" value="0" type="radio" name="sad">
+          <label class="percentage-label" for="sad-lowest">0%</label>
+          <input id="sad-upper-lowest" class="second" value="25" type="radio" name="sad">
+          <label class="percentage-label" for="sad-upper-lowest">25%</label>
+          <input id="sad-middle" class="third" value="50" type="radio" name="sad">
+          <label class="percentage-label" for="sad-middle">50%</label>
+          <input id="sad-under-highest" class="fourth" value="75" type="radio" name="sad">
+          <label class="percentage-label" for="sad-under-highest">75%</label>
+          <input id="sad-highest" class="fifth" value="100" type="radio" name="sad">
+          <label class="percentage-label" for="sad-highest">100%</label>
+        </div>
+      </div>
+
+      <div class="tired-selection">
+        <div class="mood-title">
+          <div class="mood">Tiredness</div>
+          <div class="mood-description">Choose how tired you are feeling right now: </div>
+        </div>
+        <div class="selection">
+          <input id="tired-lowest" class="first" value="0" type="radio" name="tired">
+          <label class="percentage-label" for="tired-lowest">0%</label>
+          <input id="tired-upper-lowest" class="second" value="25" type="radio" name="tired">
+          <label class="percentage-label" for="tired-upper-lowest">25%</label>
+          <input id="tired-middle" class="third" value="50" type="radio" name="tired">
+          <label class="percentage-label" for="tired-middle">50%</label>
+          <input id="tired-under-highest" class="fourth" value="75" type="radio" name="tired">
+          <label class="percentage-label" for="tired-under-highest">75%</label>
+          <input id="tired-highest" class="fifth" value="100" type="radio" name="tired">
+          <label class="percentage-label" for="tired-highest">100%</label>
+        </div>
+      </div>
+
+      <div class="energetic-selection">
+        <div class="mood-title">
+          <div class="mood">Energy</div>
+          <div class="mood-description">Choose how energetic you are feeling right now: </div>
+        </div>
+        <div class="selection">
+          <input id="energy-lowest" class="first" value="0" type="radio" name="energy">
+          <label class="percentage-label" for="energy-lowest">0%</label>
+          <input id="energy-upper-lowest" class="second" value="25" type="radio" name="energy">
+          <label class="percentage-label" for="energy-upper-lowest">25%</label>
+          <input id="energy-middle" class="third" value="50" type="radio" name="energy">
+          <label class="percentage-label" for="energy-middle">50%</label>
+          <input id="energy-under-highest" class="fourth" value="75" type="radio" name="energy">
+          <label class="percentage-label" for="energy-under-highest">75%</label>
+          <input id="energy-highest" class="fifth" value="100" type="radio" name="energy">
+          <label class="percentage-label" for="energy-highest">100%</label>
+        </div>
+      </div>
+
+      <div class="stressed-selection">
+        <div class="mood-title">
+          <div class="mood">Stress</div>
+          <div class="mood-description">Choose how stressed you are feeling right now: </div>
+        </div>
+        <div class="selection">
+          <input id="stress-lowest" class="first" value="0" type="radio" name="stress">
+          <label class="percentage-label" for="stress-lowest">0%</label>
+          <input id="stress-upper-lowest" class="second" value="25" type="radio" name="stress">
+          <label class="percentage-label" for="stress-upper-lowest">25%</label>
+          <input id="stress-middle" class="third" value="50" type="radio" name="stress">
+          <label class="percentage-label" for="stress-middle">50%</label>
+          <input id="stress-under-highest" class="fourth" value="75" type="radio" name="stress">
+          <label class="percentage-label" for="stress-under-highest">75%</label>
+          <input id="stress-highest" class="fifth" value="100" type="radio" name="stress">
+          <label class="percentage-label" for="stress-highest">100%</label>
+        </div>
+      </div>
+
+      <div class="anger-selection">
+        <div class="mood-title">
+          <div class="mood">Anger</div>
+          <div class="mood-description">Choose how angry you are feeling right now: </div>
+        </div>
+        <div class="selection">
+          <input id="anger-lowest" class="first" value="0" type="radio" name="anger">
+          <label class="percentage-label" for="anger-lowest">0%</label>
+          <input id="anger-upper-lowest" class="second" value="25" type="radio" name="anger">
+          <label class="percentage-label" for="anger-upper-lowest">25%</label>
+          <input id="anger-middle" class="third" value="50" type="radio" name="anger">
+          <label class="percentage-label" for="anger-middle">50%</label>
+          <input id="anger-under-highest" class="fourth" value="75" type="radio" name="anger">
+          <label class="percentage-label" for="anger-under-highest">75%</label>
+          <input id="anger-highest" class="fifth" value="100" type="radio" name="anger">
+          <label class="percentage-label" for="anger-highest">100%</label>
+        </div>
+      </div>
+
+      <button class="c-a-r-button" onclick="feelings()">Calculate Activity Recommendations</button>
+    </div>
+    <script src="scripts/script.js"></script>
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <div class="contact-us">Contact us:</div>
+
+    <div class="icons">
+      <a class="icon-link" href="">
+        <img class="icon" src="icons/facebook-logo.png">
+      </a>
+      <a class="icon-link" href="">
+        <img class="icon" src="icons/instagram-logo.png">
+      </a>
+      <a class="icon-link" href="">
+        <img class="icon" src="icons/tik-tok-logo.png">
+      </a>
+      <a class="icon-link" href="">
+        <img class="icon" src="icons/youtube-logo.png">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
