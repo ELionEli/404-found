@@ -4,7 +4,7 @@ function getSelectedValue(name) {
 }
 
 function feelings() {
-    const moods = ["happy", "sad", "tired", "energized", "stressed", "angry"];
+    const moods = ["happy", "sad", "tired", "energy", "stress", "anger"]; 
     const moodValues = {};
 
     moods.forEach(mood => {
