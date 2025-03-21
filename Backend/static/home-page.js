@@ -14,7 +14,14 @@ function feelings() {
     const allZero = Object.values(moodValues).every(value => value === "0" || value === null);
 
     if (allZero) {
-        alert("Please enter your feelings.");
+        const modal = document.getElementById("modal");
+        const closeButton = document.getElementById("closeModal");
+        
+        modal.classList.add("open");
+
+        closeButton.addEventListener("click", () => {
+            modal.classList.remove("open");
+        });
     } else {
         fetch("/feelings", {
             method: 'POST',
