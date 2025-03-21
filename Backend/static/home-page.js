@@ -25,7 +25,7 @@ function feelings() {
         })
         .then(response => response.text())
         .then(data => {
-            document.getElementById("result").textContent = data;
+            document.getElementById("result").innerText = data;
         })
 
     }
