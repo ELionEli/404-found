@@ -16,12 +16,17 @@ function feelings() {
     if (allZero) {
         alert("Please enter your feelings.");
     } else {
-        fetch("127.0.0.1:5000/feelings", {
+        fetch("/feelings", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(moodValues)
         })
+        .then(response => response.text())
+        .then(data => {
+            alert(data);
+        })
+
     }
 }
