@@ -295,3 +295,16 @@ footer {
   text-decoration: none;
   height: 0;
 }
+
+
+#result {
+  margin-top:20px;
+  white-space: pre-line; 
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+
+}
