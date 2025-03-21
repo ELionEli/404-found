@@ -4,10 +4,11 @@ p {
 }
 
 body {
-  background-color: bisque;
+  background-color: #FFFFFF;
   font-family: Arial;
-  padding-bottom: 1000px;
   margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 
 header {    
@@ -15,87 +16,66 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(255, 197, 63);
+  background-color: #A7C7E7;
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   right: 0;
   padding: 10px 20px;
-  box-shadow: 0px 0px 10px black inset;
-}
-
-.left-section {
-}
-
-.right-section {
-}
-
-.profile-log-sign-buttons{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
-}
-
-.current-user-profile-picture {
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 .log-in-button {
-  background-color: white;
-  color: blue;
+  background-color: #74C0FC;
+  color: #FFFFFF;
   font-size: 18px;
   border-radius: 8px;
   padding: 10px 10px;
-  border-color: blue;
   border-width: 3px;
   border-style: solid;
   font-weight: bold;
+  cursor: pointer;
+  border-color: #FFFFFF;
+  transition: all 0.15s;
 }
 
-.sign-up-button {
+.register-button {
   font-size: 18px;
   border-radius: 8px;
   padding: 10px 10px;
   border: none;
-  color: white;
-  background-color: blue;
+  color: #FFFFFF;
+  background-color: #A8E6CF;
   font-weight: bold;
-  border-color: blue;
   border-width: 3px;
   border-style: solid;
   margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s;
 }
 
 .link-to-log, 
-.link-to-sign {
+.link-to-regiter {
   text-decoration: none;
   height: 0;
 }
 
-.sidebar {
-  position: fixed;
-  top: 87px;
-  left: 0;
-  bottom: 0;
-  z-index: 100;
-  background-color: rgb(230, 61, 61);
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 100px;
-  padding-bottom: 90px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 0px 10px black inset;
+.log-in-button:hover {
+  background-color: #4A90E2;
+}
+
+.register-button:hover {
+  background-color: #7DC7A8;
+}
+
+.log-in-button:active,
+.register-button:active {
+  opacity: 0.8;
 }
 
 .page {
@@ -119,9 +99,7 @@ header {
 }
 
 main {
-  margin-top: 87px;
-  margin-left: 133px;
-  box-shadow: 0px 0px 10px black inset;
+  margin-top: 83px;
 }
 
 .title {
@@ -146,10 +124,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(202, 24, 24, 0.201);
+  background-color: #7089c0;
   padding-top: 50px;
   padding-bottom: 50px;
-  box-shadow: 0px 0px 10px black inset;
 }
 
 .selection {
@@ -157,7 +134,6 @@ main {
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  box-shadow: 0px 0px 10px black inset;
 }
 
 .first {
@@ -211,17 +187,44 @@ input[id$="highest"] {
   accent-color: rgb(255, 0, 0);
 }
 
+
 .happy-selection,
 .sad-selection,
 .tired-selection,
 .energetic-selection,
 .stressed-selection,
 .anger-selection {
-  background: rgb(241, 36, 97);
   margin-bottom: 30px;
   border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0px 0px 10px black inset;
+  padding: 30px;
+}
+
+.happy-selection {
+  background: #FFF5BA;
+}
+
+.happy-selection {
+  background: #B3E5FC;
+}
+
+.sad-selection {
+  background: #FFF5BA;
+}
+
+.tired-selection {
+  background: #F5E6CC;
+}
+
+.energetic-selection {
+  background: #A1E8D9;
+}
+
+.stressed-selection {
+  background: #FFC6A4;
+}
+
+.anger-selection {
+  background: #FFB3B3;
 }
 
 .mood {
@@ -229,23 +232,24 @@ input[id$="highest"] {
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
-  color: white;
+  color: #1A1A2E;
 }
 
 .mood-description {
   text-align: center;
   font-size: 18px;
   margin-bottom: 10px;
-  color: white;
+  color: #1A1A2E;
 }
 
 .c-a-r-button {
-  padding: 20px 10px;
+  padding: 20px 16px;
   border-radius: 4px;
   border: none;
+  font-size: 18px;
   color: white;
   background-color: rgb(183, 24, 24);
-  box-shadow: 0px 0px 10px black inset;
+  transition: all 0.15s;
 }
 
 .c-a-r-button:hover {
@@ -253,5 +257,41 @@ input[id$="highest"] {
 }
 
 .c-a-r-button:active {
+  opacity: 0.6;
+}
+
+footer {
+  background-color: #A1E8D9;
+  padding: 20px 200px;
+}
+
+.contact-us {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icons {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  transition: all 0.15s;
+}
+
+.icon:hover {
   opacity: 0.8;
+}
+
+.icon-link {
+  text-decoration: none;
+  height: 0;
 }

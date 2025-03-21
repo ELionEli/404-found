@@ -3,34 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mood Activity Recommender</title>
+  <title>VibeActive</title>
   <link rel="stylesheet" href="styles/home-page.css" />
+  <link rel="icon" href="vibe-active-icon.png" type="image/x-icon">
   <script src="home-page.js" defer></script>
 </head>
 <body>
   <header>
     <div class="left-section">
-      <img class="logo" src="current-user-profile-picture.png" />
+      <img class="logo" src="vibe-active-icon.png" />
     </div>
     <div class="right-section">
-      <div class="profile-log-sign-buttons">
-        <a class="link-to-log" href="">
-          <button class="log-in-button">Log in</button>
-        </a>
-        <a class="link-to-sign" href="">
-          <button class="sign-up-button">Sign up</button>
-        </a>
-      </div>
-      <img class="current-user-profile-picture" src="current-user-profile-picture.png" />
+      <a class="link-to-log" href="">
+        <button class="log-in-button">Log in</button>
+      </a>
+      <a class="link-to-register" href="">
+        <button class="register-button">Register</button>
+      </a>
     </div>
   </header>
-
-  <section class="sidebar">
-    <a href="home-page.html" class="page">Home</a>
-    <a href="#" class="page">page-name</a>
-    <a href="#" class="page">page-name</a>
-    <a href="#" class="page">page-name</a>
-  </section>
 
   <main>
     <div class="title">Home</div>
@@ -38,25 +29,24 @@
       Here we can calculate some activity recommendations that you can do based on your current mood!
     </div>
     <div class="selections">
-
-      <div class="happy-selection">
-        <div class="mood-title">
-          <div class="mood">Happiness</div>
-          <div class="mood-description">Choose how happy you are feeling right now: </div>
+        <div class="happy-selection">
+          <div class="mood-title">
+            <div class="mood">Happiness</div>
+            <div class="mood-description">Choose how happy you are feeling right now: </div>
+          </div>
+          <div class="selection">
+            <input id="happy-lowest" class="first" value="0" type="radio" name="happy">
+            <label class="percentage-label" for="happy-lowest">0%</label>
+            <input id="happy-upper-lowest" class="second" value="25" type="radio" name="happy">
+            <label class="percentage-label" for="happy-upper-lowest">25%</label>
+            <input id="happy-middle" class="third" value="50" type="radio" name="happy">
+            <label class="percentage-label" for="happy-middle">50%</label>
+            <input id="happy-under-highest" class="fourth" value="75" type="radio" name="happy">
+            <label class="percentage-label" for="happy-under-highest">75%</label>
+            <input id="happy-highest" class="fifth" value="100" type="radio" name="happy">
+            <label class="percentage-label" for="happy-highest">100%</label>
+          </div>
         </div>
-        <div class="selection">
-          <input id="happy-lowest" class="first" value="0" type="radio" name="happy">
-          <label class="percentage-label" for="happy-lowest">0%</label>
-          <input id="happy-upper-lowest" class="second" value="25" type="radio" name="happy">
-          <label class="percentage-label" for="happy-upper-lowest">25%</label>
-          <input id="happy-middle" class="third" value="50" type="radio" name="happy">
-          <label class="percentage-label" for="happy-middle">50%</label>
-          <input id="happy-under-highest" class="fourth" value="75" type="radio" name="happy">
-          <label class="percentage-label" for="happy-under-highest">75%</label>
-          <input id="happy-highest" class="fifth" value="100" type="radio" name="happy">
-          <label class="percentage-label" for="happy-highest">100%</label>
-        </div>
-      </div>
 
       <div class="sad-selection">
         <div class="mood-title">
@@ -156,6 +146,25 @@
       <button class="c-a-r-button" onclick="feelings()">Calculate Activity Recommendations</button>
     </div>
   </main>
+
+  <footer>
+    <div class="contact-us">Contact us:</div>
+
+    <div class="icons">
+      <a class="icon-link" href="">
+        <img class="icon" src="icons/facebook-logo.png">
+      </a>
+      <a class="icon-link" href="">
+        <img class="icon" src="icons/instagram-logo.png">
+      </a>
+      <a class="icon-link" href="">
+        <img class="icon" src="icons/tik-tok-logo.png">
+      </a>
+      <a class="icon-link" href="">
+        <img class="icon" src="icons/youtube-logo.png">
+      </a>
+    </div>
+  </footer>
 
   <script src="scripts/script.js"></script>
 </body>
