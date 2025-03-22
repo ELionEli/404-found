@@ -1,0 +1,163 @@
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: Arial;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  background-color: #4E6C79;
+  padding-bottom: 200px;
+}
+
+header {    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7B8C93;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.log-in-button {
+  background-color: #4E6C79;
+  color: #FFFFFF;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 10px 10px;
+  border-width: 3px;
+  border-style: solid;
+  font-weight: bold;
+  cursor: pointer;
+  border-color: #FFFFFF;
+  transition: all 0.15s;
+}
+
+.register-button {
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 10px 10px;
+  border: none;
+  color: #4E6C79;
+  background-color: #FFFFFF;
+  font-weight: bold;
+  border-width: 3px;
+  border-style: solid;
+  margin-left: 10px;
+  border-color: #4E6C79;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.link-to-log, 
+.link-to-regiter {
+  text-decoration: none;
+  height: 0;
+}
+
+.log-in-button:hover {
+  background-color: #FFFFFF;
+  color: #4E6C79;
+  border-color: #4E6C79;
+}
+
+.register-button:hover {
+  background-color: #4E6C79;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.log-in-button:active,
+.register-button:active {
+  opacity: 0.8;
+}
+
+main {
+  margin-top: 84px;
+  color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+.title {
+  font-size: 100px;
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  color: white;
+} 
+
+.desc {
+  margin-top: 200px;
+  color: white;
+  font-size: 30px;
+  text-align: justify;
+  padding: 50px;
+  background-color: #3c4b52;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  text-align: justify;
+  text-align: center;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+footer {
+  background-color: #FBE3D2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.contact-us {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  margin-bottom: 0;
+  border-radius: 25px;
+  transition: all 0.15s;
+}
+
+.icon:hover {
+  opacity: 0.8;
+}
+
+.icon-link {
+  text-decoration: none;
+  height: 0;
+}

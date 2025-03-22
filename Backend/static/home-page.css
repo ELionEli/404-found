@@ -4,11 +4,12 @@ p {
 }
 
 body {
-  background-color: #FFFFFF;
   font-family: Arial;
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
+  padding-bottom: 200px;
+  background-color: #4E6C79;
 }
 
 header {    
@@ -16,7 +17,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #A7C7E7;
+  background-color: #7B8C93;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -30,8 +31,8 @@ header {
   height: 60px;
 }
 
-.log-in-button {
-  background-color: #74C0FC;
+.log-out-button {
+  background-color: #4E6C79;
   color: #FFFFFF;
   font-size: 18px;
   border-radius: 8px;
@@ -44,58 +45,19 @@ header {
   transition: all 0.15s;
 }
 
-.register-button {
-  font-size: 18px;
-  border-radius: 8px;
-  padding: 10px 10px;
-  border: none;
-  color: #FFFFFF;
-  background-color: #A8E6CF;
-  font-weight: bold;
-  border-width: 3px;
-  border-style: solid;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: background-color 0.15s;
-}
-
-.link-to-log, 
-.link-to-regiter {
+.link-to-log-out {
   text-decoration: none;
   height: 0;
 }
 
-.log-in-button:hover {
-  background-color: #4A90E2;
+.log-out-button:hover {
+  background-color: #FFFFFF;
+  color: #4E6C79;
+  border-color: #4E6C79;
 }
 
-.register-button:hover {
-  background-color: #7DC7A8;
-}
-
-.log-in-button:active,
-.register-button:active {
+.log-out-button:active {
   opacity: 0.8;
-}
-
-.page {
-  color: white;
-  transition: all 0.15s;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  flex: 1;
-  text-decoration: none;
-}
-
-.page:hover {
-  background-color: rgba(255, 135, 14, 0.352);
 }
 
 main {
@@ -107,7 +69,8 @@ main {
   font-weight: bold;
   font-size: 60px;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  color: white;
 }
 
 .home-description {
@@ -115,18 +78,22 @@ main {
   font-size: 20px;
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-weight: bold;
   line-height: 30px;
+  color: white;
+}
+
+.test {
+  background-color: #89919437;
+  padding: 50px;
+  border-radius: 20px;
 }
 
 .selections {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #7089c0;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .selection {
@@ -200,31 +167,27 @@ input[id$="highest"] {
 }
 
 .happy-selection {
-  background: #FFF5BA;
-}
-
-.happy-selection {
-  background: #B3E5FC;
+  background: #A3B7C9;
 }
 
 .sad-selection {
-  background: #FFF5BA;
+  background: #7B8C93;
 }
 
 .tired-selection {
-  background: #F5E6CC;
+  background: #6d849c;
 }
 
 .energetic-selection {
-  background: #A1E8D9;
+  background: #B6C2D3;
 }
 
 .stressed-selection {
-  background: #FFC6A4;
+  background: #6F8293;
 }
 
 .anger-selection {
-  background: #FFB3B3;
+  background: #8C6E72;
 }
 
 .mood {
@@ -247,42 +210,49 @@ input[id$="highest"] {
   border-radius: 10px;
   border: none;
   font-size: 18px;
-  color: white;
-  background-color: rgb(183, 24, 24);
+  color: black;
+  font-weight: bold;
+  background-color: #FBE3D2;
   transition: all 0.15s;
+  margin-top: 20px;
 }
 
 .c-a-r-button:hover {
-  background-color: rgb(154, 24, 24);
+  background-color: #dbb69d;
 }
 
 .c-a-r-button:active {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 footer {
-  background-color: #A1E8D9;
-  padding: 20px 200px;
+  background-color: #FBE3D2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }
 
 .contact-us {
   font-weight: bold;
   font-size: 30px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  color: black;
 }
 
 .icons {
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .icon {
   width: 50px;
   height: 50px;
+  margin: 10px;
+  margin-bottom: 0;
   border-radius: 25px;
   transition: all 0.15s;
 }
@@ -306,11 +276,10 @@ footer {
   padding: 15px;
   margin-top: 20px;
   font-family: Arial, sans-serif;
-
 }
 
 .modal {
-  background-color: #1111;
+  background-color: #111111a1;
   opacity: 0;
   position: fixed;
   top: 0;
@@ -350,8 +319,17 @@ footer {
 .closeModal{
   border: none;
   border-radius: 20px;
-  background-image: linear-gradient(to right, #663399, #8853bd);
+  background-image: linear-gradient(45deg, #53277e, #9657d6);
   color: #fff;
   cursor: pointer;
   padding: 10px 25px;
+  transition: all 0.15s;
+}
+
+.closeModal:hover {
+  opacity: 0.8;
+}
+
+.closeModal:active {
+  opacity: 0.6;
 }
